@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./../fonts/Inter/static/Inter-Bold.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --orange-color: #d97961;
+}
+
+body {
+  background-color: #e6edef;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #515b34;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.user-profile-card {
+  background-color: #fff9f9;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 280px;
+  flex-basis: 300px;
+  max-width: 320px;
+  padding: 1rem;
+  box-shadow: 0 0 10px gray;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.full-name-user {
+  margin-top: 1rem;
+}
+
+.name-of-specialty {
+  font-size: 0.7rem;
+  color: var(--orange-color);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.description-of-specialty {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #000;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.footer-part-links {
+  margin-top: auto;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  border-bottom: 2px solid #9a9a9a;
+}
+
+.social-link {
+  height: 1.8rem;
+  width: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 1rem 0;
+}
+
+.contact-btn {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.same-properties-btn {
+  color: #fff;
+  width: 7rem;
+  height: 2rem;
+  font-family: "Roboto", Helvetica, sans-serif;
+  border: none;
+  background-color: #988a72;
+}
+
+.same-properties-btn:hover {
+  background-color: var(--orange-color);
+}
